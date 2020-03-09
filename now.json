@@ -6,5 +6,9 @@
       "use": "@now/python",
       "config": { "maxLambdaSize": "5mb" }
     }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/.*", "dest": "/index.py"}
   ]
 }
