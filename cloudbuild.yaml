@@ -5,5 +5,5 @@ steps:
       - deploy
       - --trigger-http # HTTP trigger
       - --runtime=python37
-      - --entry-point=tceq # Defined function in index.py
-      - results # Cloud Function name
+      - --entry-point=api # Defined function in main.py
+      - api # Cloud Function name

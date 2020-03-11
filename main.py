@@ -6,7 +6,7 @@ Main functions start
 """
 
 
-def results(request):
+def api(request):
     """HTTP Cloud Function.
     Args:
         request (flask.Request): The request object.
