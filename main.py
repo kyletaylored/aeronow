@@ -5,6 +5,7 @@ from tceq import API
 Main functions start
 """
 
+tceq = API()
 
 def api(request):
     """HTTP Cloud Function.
@@ -18,7 +19,7 @@ def api(request):
     """
     # request_json = request.get_json(silent=True)
 
-    print(request.args)
+    sites = tceq.get_sites()
 
     # Format request
-    return jsonify({"apple": "oranges"})
+    return jsonify(sites)
