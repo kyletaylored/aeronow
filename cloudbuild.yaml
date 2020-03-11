@@ -1,0 +1,9 @@
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - functions
+      - deploy
+      - --trigger-http # HTTP trigger
+      - --runtime=python37
+      - --entry-point=tceq # Defined function in index.py
+      - results # Cloud Function name
