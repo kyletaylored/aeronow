@@ -18,5 +18,7 @@ def api(request):
     """
     # request_json = request.get_json(silent=True)
 
+    print(request.args)
+
     # Format request
-    return jsonify(request.args)
+    return jsonify({"apple": "oranges"})
