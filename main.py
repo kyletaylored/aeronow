@@ -1,5 +1,6 @@
 from flask import escape, jsonify, send_file
 from tceq import API
+from pprint import pprint
 
 """
 Main functions start
@@ -20,6 +21,7 @@ def api(request):
     # request_json = request.get_json(silent=True)
 
     sites = tceq.get_sites()
+    pprint(sites)
 
     # Format request
     return jsonify(request.path)
