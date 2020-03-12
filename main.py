@@ -22,4 +22,4 @@ def api(request):
     sites = tceq.get_sites()
 
     # Format request
-    return jsonify(sites)
+    return jsonify(request.path)
